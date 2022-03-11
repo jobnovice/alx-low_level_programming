@@ -12,7 +12,7 @@ int main(void)
 	putchar('d');
 	putchar(' ');
 	putchar('t');
- 	putchar('h');
+	putchar('h');
 	putchar('a');
 	putchar('t');
 	putchar(' ');
@@ -66,5 +66,5 @@ int main(void)
 	putchar('1');
 	putchar('9');
 	putchar('\n');
-	return 1;
+	return (1);
 }
