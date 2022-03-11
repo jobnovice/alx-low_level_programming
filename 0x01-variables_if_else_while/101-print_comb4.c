@@ -15,11 +15,11 @@ int main(void)
 		{
 			for (k = 48; k <= 57; k++)
 			{
-				if (((i >= 1 && j <= i - 1) || (j >= 1 && k <= j - 1)) || ((i == j) || (i == k) || (j == k)))
+				if ((i >= 1 && j <= i - 1) || (j >= 1 && k <= j - 1))
 				{
-				continue;
+					continue;
 				}
-				else
+				else if ((i != k) && (i != j) && (j != k))
 				{
 					putchar(i);
 					putchar(j);
