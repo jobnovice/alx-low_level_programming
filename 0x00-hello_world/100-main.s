@@ -9,19 +9,17 @@
 main:
 .LFB0:
 	.cfi_startproc
-	push	ebp
-	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	mov	ebp, esp
-	.cfi_def_cfa_register 5
-	and	esp, -16
-	sub	esp, 16
-	mov	DWORD PTR [esp], OFFSET FLAT:.LC0
+	push	rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	mov	rbp, rsp
+	.cfi_def_cfa_register 6
+	mov	edi, OFFSET FLAT:.LC0
+	mov	eax, 0
 	call	printf
 	mov	eax, 0
-	leave
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
+	pop	rbp
+	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
 .LFE0:

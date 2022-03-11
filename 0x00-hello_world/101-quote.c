@@ -60,11 +60,12 @@ int main(void)
     putchar('1');
     putchar('5');
     putchar('-');
-    putchar('10');
+    putchar('1');
+    putchar('0');
     putchar('-');
     putchar('1');
     putchar('9');
     putchar('\n');
 
-    return (1);
+    return 1;
 }
