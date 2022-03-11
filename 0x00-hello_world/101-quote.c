@@ -47,7 +47,7 @@ int main(void)
 	putchar('r');
 	putchar('a');
 	putchar(' ');
-	putchar('k');
+	putchar('K');
 	putchar('o');
 	putchar('r');
 	putchar('p');
