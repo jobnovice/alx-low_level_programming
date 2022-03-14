@@ -17,7 +17,7 @@ int main(void)
 			{
 				for (l = 48; l <= 57; l++)
 				{
-					if ((l <= j) || (k < i))
+					if (((i == k) && (l <= j)) || (k < i))
 					{
 						continue;
 					}
@@ -28,11 +28,12 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(l);
-						if (i + j < 113)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					}
+					if (i + j < 113)
+					{
+
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
