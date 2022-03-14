@@ -29,7 +29,7 @@ int main(void)
 						putchar(k);
 						putchar(l);
 					}
-					if (i + j < 113)
+					if (i + j + k + l < 227)
 					{
 
 						putchar(',');
