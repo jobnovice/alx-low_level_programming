@@ -3,6 +3,7 @@
 /**
  * _islower - Entry point
  * _islower is the function
+ * @c: holds one charcter
  * c is an integer
  * Return: an int value will be returned
  * that's all
