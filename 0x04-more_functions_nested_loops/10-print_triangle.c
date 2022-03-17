@@ -1,23 +1,34 @@
 #include "main.h"
+
 /**
- * print_triangle - main functions
- * @size: size of the display size
- * well that's about it
- * Return: void nothing to retrun
+ * print_triangle - check for a digit
+ * @size : integer type
+ * Return:void
  */
+
 void print_triangle(int size)
 {
-	int i, j;
 
-	for (i = 0; i < size; i++)
+	int i = 1, ii;
+
+	while (i <= size && size > 0)
 	{
-		for (j = 0; j < size; j++)
+		ii = 0;
+		while (ii < size - i)
 		{
-			if (i + j >= size - 1)
-				_putchar('#');
-			else
-				_putchar(' ');
+			_putchar(' ');
+			ii++;
 		}
+		ii = 0;
+		while (ii < i)
+		{
+			_putchar('#');
+			ii++;
+		}
+
 		_putchar('\n');
+		i++;
 	}
+	if (i == 1)
+		_putchar('\n');
 }
