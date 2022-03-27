@@ -1,21 +1,19 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- *  *string_toupper - a function that reverse an array
- * @s: an integer pointer
- * Return: it's self
+ *string_toupper - lower to upper
+ *@s: pointer to char
+ *Return: *s
  */
+
 char *string_toupper(char *s)
 {
-	int i = 0;
+	int i;
 
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
-		{
-			s[i] = s[i] - 32;
-		}
+			s[i] -= 32;
 	}
-
 	return (s);
 }
