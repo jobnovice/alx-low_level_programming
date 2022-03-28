@@ -2,9 +2,9 @@
 /**
  **_memcpy - the main function that returns main
  *@dest:destination char array
- *@src: source array 
+ *@src: source array
  *@n: at most n bytes
- *Return: char 
+ *Return: a char
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
