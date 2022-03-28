@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  **_memset - the main function
  *@s:the memory location
@@ -12,8 +13,7 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (i = 0; i < n; i++)
 	{
-		s[i] = _putchar(b);
+		s[i] = b;
 	}
-	_putchar('\n');
 	return (s);
 }
