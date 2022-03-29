@@ -1,0 +1,14 @@
+#include "main.h"
+/**
+ * *_strstr - main function
+ *@haystack:to be searched from
+ *@needle:to be searched
+ *Return:the status of the search
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	
+
+
+
+}
