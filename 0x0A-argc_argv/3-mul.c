@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int x, y;
 
-	if (argc > 2)
+	if (argc == 3)
 	{
 		x = atoi(argv[argc - 1]);
 		y = atoi(argv[argc - 2]);
