@@ -4,15 +4,14 @@
  *@s: the charcter array
  * Return:nada
  */
- void _puts_recursion(char *s)
- {
-    int i;
+void _puts_recursion(char *s)
+{
 
-    if (s[i] != '\0')
-     {
-        putchar(s[i]);
-        _puts_recursion(s[i+1]);
-     }
-     else
-        _putchar('\n');
- }
+	if (*s != '\0')
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		_putchar('\n');
+}
