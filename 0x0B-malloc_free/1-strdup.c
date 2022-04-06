@@ -1,28 +1,32 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+
 /**
- **create_array -  Create a array object
- * @str: yeah man the size of thea array. 
- * Return: char*  if there is no mo space
+ * _strdup - copy
+ * @str: pointer to string
+ * Return: pointer
  */
 
 char *_strdup(char *str)
 {
-    char *array;
-    int i,size;
+	char *s;
+	int i = 0, j;
 
-   
-	if (str == '\0')
+	if (!str)
 		return (NULL);
-    while (str[i] != '\0')
-     {
-         size++;
-         i++;
-     }
-	array = (char *) malloc(sizeof(char) * size);
 
-    for (i = 0; str[i]; i++)
-        array[i]= str[i];
-	return (array);
+	while (*(str + i))
+		i++;
+	i++;
+	s = malloc(sizeof(char) * i);
+
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+
+	for (j = 0; j <= i; j++)
+	{
+		s[j] = str[j];
+	}
+	return (s);
 }
