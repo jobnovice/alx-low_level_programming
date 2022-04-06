@@ -3,14 +3,13 @@
 #include <stdlib.h>
 /**
  **create_array -  Create a array object
- * @size: yeah man the size of thea array. 
+ * @size: yeah man the size of thea array.
  * @c:to be populated with this
- * Return: char* 
+ * Return: char*
  */
-
 char *create_array(unsigned int size, char c)
 {
-    char *array;
+	char *array;
 
 	if (!size)
 		return (NULL);
