@@ -1,7 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-int main (int argc, char** argv)
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+
+int main(void)
 {
-    printf("%s\n",__LINE__);
-    return (0);
+	printf("%s\n", __FILE__);
+	return (0);
 }
