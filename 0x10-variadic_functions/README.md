@@ -1,0 +1,1 @@
+about a funcion that takes a variable argument
