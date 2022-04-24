@@ -1,1 +1,1 @@
-yeah new readme n all that
+about recursivley defined functions.
