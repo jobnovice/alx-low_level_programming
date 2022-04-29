@@ -1,1 +1,1 @@
-my firt readme
+more on bit manipulation
