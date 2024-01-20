@@ -4,7 +4,7 @@
 /**
  * linear_search - search algorthim to retreive an item 
  * @array: the list of which the value to be searched in
- * @size: the size of the array
+ * @size: the size of the arrays
  * @value: the value to be searched
  * Returns: the index of the value to be searched
  */
