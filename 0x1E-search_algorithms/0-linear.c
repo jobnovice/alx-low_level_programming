@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "search_algos.h"
+#include  <stdio.h>
 
 /**
  * linear_search - search algorthim to retreive an item 
@@ -13,8 +13,10 @@
      if (array == NULL) return -1;
      for (int i = 0; i < size; i++){
         if (array[i] == value){
+            printf("Found [%d] at index: [%d]", i, value);
             return i;
         }
+        printf("value checked array[%d] = [%d]", i, value);
      }
      return -1;
  }
