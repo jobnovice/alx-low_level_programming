@@ -12,13 +12,13 @@
  {
      if (array == NULL) return -1;
 
-     size_t i;
+     size_t i = 0;
      for (i = 0; i < size; i++){
         if (array[i] == value){
-            printf("Found [%d] at index: [%zu]", value, i);
+            printf("Found [%d] at index: [%d]", value, i);
             return i;
         }
-        printf("value checked array[%zu] = [%d]", i, value);
+        printf("value checked array[%d] = [%d]", i, value);
      }
     printf("Found [%d] at index: [%d]", value, -1);
      
