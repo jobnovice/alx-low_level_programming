@@ -1,15 +1,16 @@
 #include "search_algos.h"
 
 /**
- * linear_search - search algorthim to retreive an item 
- * @array: the list of which the value to be searched in
- * @size: the size of the arrays
- * @value: the value to be searched
- * Returns: the index of the value to be searched
+ * linear_search - searches for a value in an array of integers.
+ * @array: int pointer
+ * @size: size of the array
+ * @value: the value to be searched.
+ * Return: i
  */
- int linear_search(int *array, size_t size, int value)
- {
-    int i;
+
+int linear_search(int *array, size_t size, int value)
+{
+	int i;
 
 	if (array == NULL)
 	{
@@ -24,4 +25,4 @@
 		}
 	}
 	return (-1);
- }
+}
