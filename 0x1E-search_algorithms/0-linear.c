@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include  <stdio.h>
+#include <stdio.h>
 
 /**
  * linear_search - search algorthim to retreive an item 
