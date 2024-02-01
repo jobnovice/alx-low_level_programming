@@ -1,6 +1,5 @@
 #include "search_algos.h"
 
-
 /**
  * binary-search - implementation of binary search
  * @array: list of numbers that includes the item to be searhced for
@@ -20,11 +19,11 @@ int binary_search(int *array, size_t size, int value)
         {
             return (mid);
         }
-        else if (array[mid]  > value)
+        else if (array[mid] > value)
         {
             high = mid - 1;
         }
-        else 
+        else
         {
             low = mid + 1;
         }
