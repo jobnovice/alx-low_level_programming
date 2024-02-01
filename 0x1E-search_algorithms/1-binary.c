@@ -2,7 +2,7 @@
 
 
 /**
- * binary-search - implementation of binary search 
+ * binary-search - implementation of binary search
  * @array: list of numbers that includes the item to be searhced for
  * @size: number of items in the array
  * @value: value of the items to be searched for
@@ -10,17 +10,15 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-
-    int i;
     int low = 0;
     int high = (int)size;
 
     while (low <= high)
     {
-       int mid = (low + high) / 2;
+        int mid = (low + high) / 2;
         if (array[mid] == value)
         {
-            return mid;
+            return (mid);
         }
         else if (array[mid]  > value)
         {
@@ -31,6 +29,5 @@ int binary_search(int *array, size_t size, int value)
             low = mid + 1;
         }
     }
-    
-
+    return (-1);
 }
