@@ -1,22 +1,20 @@
 #include "search_algos.h"
 
 /**
- * binary-search - implementation of binary search
+ * binary_search - implementation of binary search
  * @array: list of numbers that includes the item to be searhced for
  * @size: number of items in the array
  * @value: value of the items to be searched for
- * return: the index of item that was searched or -1 if not found
+ * Return: the index of item that was searched or -1 if not found
  */
 int binary_search(int *array, size_t size, int value)
 {
     int low = 0;
-    int high = (int)size -1 ;
-    
+    int high = (int)size - 1;
     while (low <= high)
     {
         int mid = (low + high) / 2;
         int i;
-        
         printf("Searching in array: ");
         for(i = low; i <= high; i++)
         {
