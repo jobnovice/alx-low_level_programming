@@ -5,53 +5,54 @@
  * @array: the place to search at
  * @size: the size of the array
  * @value: the value to search for
- * Returns: int
+ * Return: int
  */
 
 
 int exponential_search(int *array, size_t size, int value)
 {
 	int b, low, high, mid;
-	// size_t length, i;
+
 	b = 1;
 
 	if (array == NULL || size <= 0)
 	{
 		return (-1);
 	}
-	while (b <= (int) size - 1 && array[b] < value)
+	while (b < (int) size  && array[b] < value)
 	{
 		printf("Value checked array[%d] = [%d]\n", b, array[b]);
 		b *= 2;
 	}
-	if (b >= (int) size)
-	{
-		b = (int) size -1;
-	}
 	low = (int) (b / 2);
-	high = b;
-
-	printf("Value found between [] and []\n",low, high );
-
-
+	if (b < (int)size)
+	{
+		high = b;
+	}
+	else
+	{
+		high = size - 1;
+	}
+	printf("Value found between [%d] and [%d]\n", low, high);
 	while (low <= high)
 	{
 		int i;
-		mid = (int) (low + high / 2);
+
+		mid = (int) (low + high) / 2;
 		printf("Searching in array: ");
 
-		for (i = low; i <= mid; i++)
+		for (i = low; i <= high; i++)
 		{
 			printf("%d", array[i]);
-			if (i < mid)
+			if (i < high)
 			{
-				print(", ");
+				printf(", ");
 			}
 		}
 		printf("\n");
 		if (array[mid] == value)
 		{
-			return (mid);	
+			return (mid);
 		}
 		else if (array[mid] > value)
 		{
