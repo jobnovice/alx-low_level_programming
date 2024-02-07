@@ -33,7 +33,7 @@ int exponential_search(int *array, size_t size, int value)
 	{
 		high = size - 1;
 	}
-	printf("Value found between [%d] and [%d]\n", low, high);
+	printf("Value found between indexes [%d] and [%d]\n", low, high);
 	while (low <= high)
 	{
 		int i;
